@@ -1,9 +1,6 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
-using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Extensions.Configuration.FileExtensions;
-using Microsoft.Extensions.Configuration.Json;
 
 namespace SprinxApp
 {
@@ -24,11 +21,11 @@ namespace SprinxApp
             Console.Read();
         }
 
-        static string [] GetConnectionStrings(string file) {
+        private static string [] GetConnectionStrings(string file) {
             return GetConfiguration(file)["connections"].Split('|');        
         }
 
-        static IConfiguration GetConfiguration(string file) {
+        private static IConfiguration GetConfiguration(string file) {
             return new ConfigurationBuilder()
             .AddJsonFile(file, true, true)
             .Build();
