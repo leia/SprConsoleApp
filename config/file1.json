@@ -1,0 +1,4 @@
+{
+    "connections":
+        "Server=192.168.8.1;Database=db1;User Id=myUsername;Password=myPassword|Server=sqlserver.mydomain.com;Database=db2;User Id=myUsername;Password=myPassword;"    
+}

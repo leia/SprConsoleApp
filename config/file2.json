@@ -1,0 +1,4 @@
+{
+    "connections": 
+        "Server=dbserver1\\dbinstance1;Database=myDb1;User Id=myUsername;Password=myPassword;|Server=dbserver2\\dbinstance2;Database=myDb2;User Id=myUsername;Password=myPassword;"
+}
